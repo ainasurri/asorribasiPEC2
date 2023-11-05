@@ -1,0 +1,3 @@
+Per què és el valor de this és undefined?
+En les funcions fat arrow, el this guarda el context on s'han declarat, mentre que les funcions clàssiques creen el seu propi context desde zero.
+S'està passant per paràmetre la funció addTodo per a que s'executi a la vista. Allà, this tindrà un altre context. Per tal de poder preservar el context del controller, les arrow function resolen aquest problema ja que fan una còpia del context on es declaren.
